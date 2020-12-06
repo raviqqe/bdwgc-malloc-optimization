@@ -6,7 +6,5 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-cd $1
-
-clang -O3 main.c
+clang -O3 -lgc $1
 ./a.out
