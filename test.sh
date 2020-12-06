@@ -2,9 +2,9 @@
 
 set -e
 
-if [ $# -ne 1 ]; then
+if [ $# -ne 2 ]; then
   exit 1
 fi
 
-clang -O3 -lgc $1
+$1 -O3 -lgc $2
 ./a.out
